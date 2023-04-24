@@ -4,7 +4,8 @@
   "description": "learn how to call an external api using node js.",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "node app.js",
+    "local": "nodemon -r esm ./index.js"
   },
   "keywords": [
     "nodejs",
@@ -17,9 +18,18 @@
     "web",
     "api"
   ],
-  "author": "Martand Singh (sniffer)",
-  "license": "MIT",
+  "author": "Manish",
   "dependencies": {
-    "request": "^2.87.0"
+    "axios": "^1.3.5",
+    "cors": "^2.8.5",
+    "cron": "^2.3.0",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "prettyjson": "^1.2.5",
+    "request": "^2.87.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
