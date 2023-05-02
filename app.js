@@ -1,7 +1,11 @@
 const apiCallFromRequest = require('./Request')
 const apiCallFromNode = require('./NodeJsCall')
+const express = require('express');
+const cors = require('cors');
 
-const http = require('http')
+const http = require('http');
+const app = express();
+app.use(cors());
 
 http.createServer((req, res) => {
         if(req.url === "/request"){
@@ -19,6 +23,6 @@ http.createServer((req, res) => {
         }
         
         // res.end();
-}).listen(3000);
+}).listen(4001);
 
-console.log("service running on 3000 port....");
+console.log("service running on 4001 port....");
